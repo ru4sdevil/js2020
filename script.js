@@ -1,6 +1,7 @@
 console.log("all is ok")
-punkt2_1()
-punkt2_2()
+//punkt2_1()
+//punkt2_2_1()
+punkt2_2_2()
 
 function punkt2_1() {
 	//разница в сравнении
@@ -14,7 +15,7 @@ function punkt2_1() {
 	console.log(c);
 }
 
-function punkt2_2(){
+function punkt2_2_1(){
 	//экранирования
 	console.log("кино \"Аватар\" \n \\n - перевод строки");
 	let s = " The Quick brown fox quicly jumps over The lasy dog.  ";
@@ -31,4 +32,19 @@ function punkt2_2(){
 	console.log(s.toLowerCase());
 	console.log(s.toUpperCase());
 	console.log(s.trim());
+}
+
+function punkt2_2_2(){
+	//Math
+	console.log(Math.pow(2, 4)); //в степень
+	console.log(Math.pow(2, -3));
+	console.log(Math.sqrt(9));//квадратный корень
+	console.log(Math.ceil(1.25));//округление вверх
+	console.log(Math.floor(1.25));//oкругление вниз
+	console.log(Math.round(1.25));//округление по правилам
+	console.log(Math.min(1,2,3,4,3,54,56,34,5,6));
+	console.log(Math.max(1,2,3,4,3,54,56,34,5,6));
+	console.log(Math.sign(-3));
+	console.log(Math.sign(0));
+	console.log(Math.sign(34));
 }
