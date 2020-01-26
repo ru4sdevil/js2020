@@ -2,7 +2,8 @@ console.log("all is ok")
 //punkt2_1()
 //punkt2_2_1()
 //punkt2_2_2()
-punkt2_2_3()
+//punkt2_2_3()
+punkt2_2_4()
 
 function punkt2_1() {
 	//разница в сравнении
@@ -68,4 +69,23 @@ function punkt2_2_3(){
 		return x%2 == 1;
 	});
 	console.log(c);
+}
+
+function punkt2_2_4(){
+	let a = [1,2,3,4,5,6,7,8,8,9,0,34,897,6,5,3,4,54,6]
+	let b = a.sort();
+	console.log(b);
+	let c = a.sort(key);
+	console.log(c);
+}
+
+function key(fst, snd){
+	if (fst < snd)
+		return -1
+	else{
+		if (fst == snd)
+			return 0
+		else
+			return 1
+	}
 }
