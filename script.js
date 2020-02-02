@@ -4,7 +4,8 @@ console.log("all is ok")
 //punkt2_2_2()
 //punkt2_2_3()
 //punkt2_2_4()
-punkt2_3()
+//punkt2_3()
+punkt2_5()
 
 function punkt2_1() {
 	//разница в сравнении
@@ -102,4 +103,14 @@ function punkt2_3(){
 	console.log(c);
 	c = a>b ? a : b;
 	console.log(c);
+}
+
+function punkt2_5(){
+	getCaller();
+	let alice = {name: "alice", fn: getCaller};
+	alice.fn();
+}
+
+function getCaller(){
+	console.log(this);
 }
