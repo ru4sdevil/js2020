@@ -5,7 +5,8 @@ console.log("all is ok")
 //punkt2_2_3()
 //punkt2_2_4()
 //punkt2_3()
-punkt2_5()
+//punkt2_5()
+punkt2_6()
 
 function punkt2_1() {
 	//разница в сравнении
@@ -113,4 +114,30 @@ function punkt2_5(){
 
 function getCaller(){
 	console.log(this);
+}
+
+function punkt2_6(){
+	let num = new Set();
+	num.add(43)
+	console.log(num)
+	num.add(42)
+	console.log(num)
+	num.add(43)
+	console.log(num)
+
+	console.log(num.has(42))
+	console.log(num.has(21))
+
+	num.add(44);
+	console.log(num)
+	for (let item of num){
+		console.log(item)
+	}
+	num.delete(43)
+	console.log(num)
+	console.log(num.size)
+	num.clear()
+	console.log(num)
+
+
 }
